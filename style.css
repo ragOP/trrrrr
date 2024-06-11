@@ -319,55 +319,72 @@
  .animation-btn:hover {
   color: red !important;
  }
- @media (min-width: 600px) {
+ .carousel4 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.carousel4-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel4-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel4-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.625em;
+  position: absolute;
+  bottom: -7.4375em;;
+}
+
+.carousel4-dot {
+  width: 0.9375em;
+  height: 0.625em; 
+  background-color: #fff;
+  margin: 0 0.3125em;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.carousel4-dot.active {
+  background-color: #fff;
+  transform: scaleX(1.5);
+}
+
+
+
+ @media (min-width: 1100px) {
   body {
-    font-size: 0.5em;
-    margin: 0;
+    font-size: 0.91000em;
   }
  }
- @media (min-width: 900px) {
+
+ @media (min-width: 1300px) {
   body {
-    font-size: 0.75em;
-    margin: 0;
+    font-size: 1.0001em;
   }
  }
-@media (min-width: 1480px) {
- body {
-   font-size: 1.25em;
-   margin: 0;
- }
-}
 
-@media (min-width: 1600px) {
- body {
-   font-size: 1.5em;
-   margin: 0;
- }
-}
-
-@media (min-width: 1900px) {
- body {
-   font-size: 1.75em;
-   margin: 0;
- }
-}
-
-@media (min-width: 2200px) {
- body {
-   font-size: 2em;
-   margin: 0;
- }
-}
-
-@media (min-width: 1450px) {
+@media (min-width: 1500px) {
   body {
-    font-size: 1em;
+    font-size: 1.1113em;
+  }
+ }
+
+ @media (min-width: 1600px) {
+  body {
+    font-size: 1.2501em;
   }
  }
  
- @media (min-width: 1600px) {
+ @media (min-width: 1800px) {
   body {
-    font-size: 1.4em;
+    font-size: 1.3335em;
   }
  }
  

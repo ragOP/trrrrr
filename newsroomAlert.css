@@ -1,0 +1,247 @@
+*{
+ overflow-x: hidden;
+}
+.newsletter{
+ width: 100%;
+ height: auto;
+ padding: 1.5em 1.5em 1.5em 2em;
+ margin: 0 6.25em;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: rgba(245, 245, 245, 1);
+ margin-bottom: 6.25em;
+ margin-top: 6.25em;
+}
+.center{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+}
+.newsletter-text-top{
+ font: 1.25em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 1.4em;
+ text-align: left;
+}
+.newsletter-tect-mid{
+ font: 1em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 400;
+ line-height: 1.5em;
+ text-align: left;
+}
+.email{
+ font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 1.571em;
+ text-align: left;
+ font-weight: 500;
+}
+input{
+ width: 70%;
+ height: 2.188em;
+ border-radius: 2px 0px 0px 0px;
+ background-color: rgba(255, 255, 255, 1);
+ border: none;
+ outline: none;
+ margin-top: 0.938em;
+ padding: 0.625em;
+}
+input::placeholder{
+ font: 1.875em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 400;
+ line-height: 1.571em;
+ text-align: left;
+}
+.dd {
+ position: relative;
+}
+
+.dd > p {
+ position: relative;
+ top: -4.625em;
+ left: 4.9375em;
+ font: 1em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 1.2em;
+ letter-spacing: 0.04em;
+ text-align: left;
+ color: #ffffff;
+ transition: all 0.3s ease;
+ cursor: pointer;
+}
+
+.dd > p::after {
+ content: '→';
+ display: inline-block;
+ opacity: 0;
+ margin-left: -1.25em;
+ font-size: 1.875em;
+ transition: all 0.3s ease;
+ position: relative;
+ left: -0.625em;
+}
+
+.dd > p:hover::after {
+ opacity: 1;
+ margin-left: 0.625em;
+ left: 0;
+}
+.dd > img {
+ width: 15em;
+}
+@media (max-width: 850px){
+ .newsletter-img{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: -71px;
+ }
+ .newsletter {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  gap: 2.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  margin-top: 0.3125em;
+}
+
+.newsletter-text {
+  margin: 0 0.625em;
+}
+
+.newsletter-text-top {
+  font: 1.375em "Helvetica Neue LT W1G", Helvetica;
+  margin-left: 0.625em;
+  font-weight: 700;
+}
+
+.newsletter-tect-mid {
+  font: 1em "Helvetica Neue LT W1G", Helvetica;
+  margin-left: 0.625em;
+  line-height: 1.5em;
+}
+
+.email {
+  margin-left: 0.625em;
+  font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+}
+
+input {
+  width: 17.1875em;
+  height: 2.1875em;
+  border-radius: 0.125em 0 0 0;
+  background-color: rgb(255, 255, 255);
+  border: 0.00625em solid gray;
+  outline: #00000040;
+  margin-top: 0.5em;
+  margin-left: 1.25em;
+  padding: 0.3125em;
+}
+input::placeholder {
+ color: #222222;
+ font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+}
+
+.newsletter-img > img {
+ position: absolute;
+ right: 0;
+}
+.newsletter-img {
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: end;
+ margin-right: -0.5em;
+}
+}
+@media (min-width: 900px) {
+ body {
+   font-size: 0.71000em;
+ }
+}
+
+@media (min-width: 1100px) {
+ body {
+   font-size: 0.91000em;
+ }
+}
+
+@media (min-width: 1300px) {
+ body {
+   font-size: 1.0001em;
+ }
+}
+
+@media (min-width: 1500px) {
+ body {
+   font-size: 1.1113em;
+ }
+}
+
+@media (min-width: 1600px) {
+ body {
+   font-size: 1.2501em;
+ }
+}
+
+@media (min-width: 1800px) {
+ body {
+   font-size: 1.3335em;
+ }
+}
+
+@media (min-width: 1900px) {
+ body {
+   font-size: 1.5em;
+ }
+}
+
+@media (min-width: 2200px) {
+ body {
+   font-size: 2em;
+ }
+}
+@media (min-width: 2400px) {
+ body {
+   font-size: 2em;
+ }
+}
+
+@media (min-width: 2800px) {
+ body {
+   font-size: 2em;
+ }
+}
+
+@media (min-width: 3200px) {
+ body {
+   font-size: 2em;
+ }
+}
+
+@media (min-width: 3400px) {
+ body {
+   font-size: 2em;
+ }
+}
+
+@media (min-width: 3800px) {
+ body {
+   font-size: 3em;
+ }
+}
+
+@media (min-width: 4200px) {
+ body {
+   font-size: 4em;
+ }
+}

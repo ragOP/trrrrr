@@ -1,3 +1,28 @@
+let currentIndex5 = 0;
+
+function moveCarousel5() {
+  const carouselInner5 = document.querySelector(".carousel5-inner");
+  const items5 = document.querySelectorAll(".main-header");
+  const totalItems5 = items5.length;
+
+  currentIndex5++;
+
+  if (currentIndex5 >= totalItems5) {
+    currentIndex5 = 0;
+  }
+
+  const offset5 = -currentIndex5 * 100;
+  carouselInner5.style.transform = `translateX(${offset5}%)`;
+}
+
+// function autoMoveCarousel5() {
+//   setInterval(moveCarousel5, 5000);
+// }
+
+window.addEventListener("load", () => {
+  setInterval(moveCarousel5, 5000);
+});
+
 let currentIndex4 = 0;
 
 function moveCarousel4(direction) {
@@ -68,4 +93,92 @@ window.addEventListener("load", () => {
   createDots4();
   updateDots4();
   setInterval(autoMoveCarousel4, 5000);
+});
+
+let currentIndex2 = 0;
+
+function moveCarousel2(direction) {
+  const carouselInner2 = document.querySelector(".carousel2-inner");
+  const items2 = document.querySelectorAll(".leadershipn-bottom-single");
+  const totalItems2 = items2.length;
+
+  currentIndex2 += direction;
+
+  if (currentIndex2 < 0) {
+    currentIndex2 = totalItems2 - 1;
+  } else if (currentIndex2 >= totalItems2) {
+    currentIndex2 = 0;
+  }
+
+  const offset2 = -currentIndex2 * 80;
+  carouselInner2.style.transform = `translateX(${offset2}%)`;
+}
+
+function resetCarousel2() {
+  currentIndex2 = 0;
+  const carouselInner2 = document.querySelector(".carousel2-inner");
+  carouselInner2.style.transform = `translateX(0%)`;
+  updateDots2();
+}
+
+function autoMoveCarousel2() {
+  if (window.innerWidth < 850) {
+    moveCarousel2(1);
+  } else {
+    resetCarousel2();
+  }
+}
+
+window.addEventListener("load", () => {
+  setInterval(autoMoveCarousel2, 8000);
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 850) {
+    resetCarousel2();
+  }
+});
+
+let currentIndex3 = 0;
+
+function moveCarousel3(direction) {
+  const carouselInner3 = document.querySelector(".carousel3-inner");
+  const items3 = document.querySelectorAll(".leadership-bottom-single");
+  const totalItems3 = items3.length;
+
+  currentIndex3 += direction;
+
+  if (currentIndex3 < 0) {
+    currentIndex3 = totalItems3 - 1;
+  } else if (currentIndex3 >= totalItems3) {
+    currentIndex3 = 0;
+  }
+
+  const offset3 = -currentIndex3 * 80;
+  carouselInner3.style.transform = `translateX(${offset3}%)`;
+}
+
+function resetCarousel3() {
+  currentIndex3 = 0;
+  const carouselInner3 = document.querySelector(".carousel3-inner");
+  carouselInner3.style.transform = `translateX(0%)`;
+  updateDots3();
+}
+
+function autoMoveCarousel3() {
+  if (window.innerWidth < 850) {
+    moveCarousel3(1);
+  } else {
+    resetCarousel3();
+  }
+}
+
+window.addEventListener("load", () => {
+  setInterval(autoMoveCarousel3, 8000);
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 850) {
+    resetCarousel3();
+  }
 });

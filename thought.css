@@ -1,0 +1,344 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+.leadershipn-top {
+ height: auto;
+ background-color: rgba(0, 8, 27, 1);
+ padding: 3.125em 6.25em;
+}
+
+.leadershipn-title {
+ font: 1.125em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 700;
+ line-height: 1.375em;
+ letter-spacing: 0.00625em;
+ text-align: left;
+ color: rgba(181, 189, 0, 1) !important;
+}
+
+.leadershipn-cover {
+ display: flex;
+ align-items: start;
+ gap: 1.875em;
+ color: rgba(255, 255, 255, 1);
+ margin-top: 1.25em;
+ background-color: rgba(39, 46, 61, 255);
+}
+.leadershipn-cover > img {
+ width: 35%;
+}
+
+.leadershipn-right {
+ padding: 1.875em;
+ padding-bottom: 0;
+ width: 65%;
+}
+
+.leadershipn-top-right {
+ font: 1.875em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 2.5em;
+ text-align: left;
+ margin-bottom: 1.5em;
+ margin-top: 1.25em;
+}
+
+.leadershipn-mid-right,
+.leadershipn-mid2-right {
+ font: 1em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 400;
+ line-height: 1.5em;
+ text-align: left;
+}
+
+.leadershipn-mid2-right {
+ margin-top: 1.25em;
+}
+
+.leadershipn-btn {
+ display: flex;
+ align-items: center;
+ gap: 0.625em;
+ margin-top: 3.125em;
+ cursor: pointer;
+}
+
+.leadershipn-btn > img {
+ width: 1em;
+}
+
+.leadership-cover-bottom {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ margin-top: 1.875em;
+ background-color: rgba(166, 25, 46, 1);
+ padding: 0.9375em;
+}
+
+.leadership-cover-bottom > p {
+ font: 1.5625em "Helvetica Neue LT W1G", Helvetica;
+ font-style: italic;
+ font-weight: 400;
+ line-height: 2.3125em;
+ text-align: center;
+ color: #fff;
+}
+
+.author {
+ font: 1em "Helvetica Neue LT W1G", Helvetica !important;
+ font-weight: 700 !important;
+ line-height: 1.5em !important;
+ text-align: center !important;
+ margin-top: 1.875em;
+}
+
+.leadershipn-bottom {
+ padding: 3.125em 6.25em;
+}
+
+.leadership-bottom-top {
+ font: 1.875em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 300;
+ line-height: 1.5em;
+ text-align: left;
+ margin-top: 1.875em;
+}
+
+.leadership-bottom-top > span {
+ font-weight: 700 !important;
+}
+
+.leadershipn-single-top,
+.leadershipn-single-bottom {
+ height: 10.986em;
+ display: flex;
+ align-items: center;
+ justify-content: start;
+ gap: 0.3125em;
+ margin-top: 1.875em;
+}
+
+.leadershipn-bottom-single {
+ width: 24.5em;
+ height: auto;
+ background-color: rgba(245, 245, 245, 1);
+ padding: 1.25em;
+}
+
+.percentage {
+ font: 1.875em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 600;
+ line-height: 2.5em;
+ text-align: left;
+}
+
+.percentage-desc {
+ font: 1em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 400;
+ line-height: 1.5em;
+ text-align: left;
+ margin-top: 0.625em;
+}
+
+.leadership-bottom-single {
+ width: auto;
+ height: 11em;
+ border-radius: 0.25em 0em 0em 0em;
+ background-color: #e8f5f7;
+ padding: 1.25em;
+ height: auto;
+}
+
+.leadership-btn {
+ margin-left: 6.25em;
+ margin-top: 0.625em;
+ display: flex;
+ align-items: center;
+ gap: 0.5em;
+}
+
+.leadership-btn > img {
+ width: 1em;
+}
+
+.leadership-bottom {
+ position: relative;
+ display: inline-block;
+}
+
+.leadership-bottom::after {
+ content: '\2192';
+ position: absolute;
+ top: 0.3125em;
+ right: -2.1875em;
+ transform: translateY(-50%);
+ opacity: 0;
+ font-size: 1.875em;
+ transition: opacity 0.3s ease,
+}
+
+.carousel2 {
+ position: relative;
+ overflow: hidden;
+ width: 100%;
+}
+
+.carousel2-inner {
+ display: flex;
+ transition: transform 0.5s ease;
+ gap: 10px;
+}
+
+.carousel3 {
+ position: relative;
+ overflow: hidden;
+ width: 100%;
+}
+
+.carousel3-inner {
+ display: flex;
+ transition: transform 0.5s ease;
+ gap: 10px;
+}
+
+@media (max-width: 850px) {
+ .leadershipn-main {
+  margin-top: 0px;
+ width: 100%;
+}
+.leadershipn-top {
+height: auto;
+background-color: rgba(0, 8, 27, 1);
+padding: 0px;
+}
+.leadershipn-cover{
+flex-direction: column;
+align-items: normal;
+padding: 15px 15px;
+}
+.leadership-cover-bottom {
+padding: 0px;
+Width: 100%;
+margin-top: 0px;
+padding: 1em;
+}
+.leadershipn-title {
+padding: 15px;
+padding-top: 40px;
+font: 18px "Helvetica Neue LT W1G", Helvetica;
+font-weight: 700;
+margin-top: 50px;
+}
+.leadershipn-top-right{
+font: 24px "Helvetica Neue LT W1G", Helvetica;
+font-weight: 500;
+line-height: 40px;
+text-align: left;
+margin-bottom: 40px;
+margin-top: 20px;
+}
+.leadershipn-cover > img{
+ width: 100%;
+}
+.leadershipn-right{
+width: 100%;
+padding: 0.875em;
+}
+.leadership-cover-bottom > p{
+ line-height: 1.3125em;
+}
+.leadershipn-bottom-single {
+ width: 98vw;
+ height: auto;
+}
+.leadershipn-bottom {
+ padding: 0;
+}
+}
+
+@media (min-width: 900px) {
+ body {
+   font-size: 0.71000em;
+ }
+}
+
+@media (min-width: 1100px) {
+ body {
+   font-size: 0.91000em;
+ }
+}
+
+@media (min-width: 1300px) {
+ body {
+   font-size: 1.0001em;
+ }
+}
+
+@media (min-width: 1500px) {
+ body {
+   font-size: 1.1113em;
+ }
+}
+
+@media (min-width: 1600px) {
+ body {
+   font-size: 1.2501em;
+ }
+}
+
+@media (min-width: 1800px) {
+ body {
+   font-size: 1.3335em;
+ }
+}
+
+@media (min-width: 1900px) {
+ body {
+   font-size: 1.5em;
+ }
+}
+
+@media (min-width: 2200px) {
+ body {
+   font-size: 2em;
+ }
+}
+@media (min-width: 2400px) {
+ body {
+   font-size: 2em;
+ }
+}
+
+@media (min-width: 2800px) {
+ body {
+   font-size: 2em;
+ }
+}
+
+@media (min-width: 3200px) {
+ body {
+   font-size: 2em;
+ }
+}
+
+@media (min-width: 3400px) {
+ body {
+   font-size: 2em;
+ }
+}
+
+@media (min-width: 3800px) {
+ body {
+   font-size: 3em;
+ }
+}
+
+@media (min-width: 4200px) {
+ body {
+   font-size: 4em;
+ }
+}

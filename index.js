@@ -15,9 +15,9 @@ function moveCarousel5() {
   carouselInner5.style.transform = `translateX(${offset5}%)`;
 }
 
-// function autoMoveCarousel5() {
-//   setInterval(moveCarousel5, 5000);
-// }
+function autoMoveCarousel5() {
+  setInterval(moveCarousel5, 5000);
+}
 
 window.addEventListener("load", () => {
   setInterval(moveCarousel5, 5000);
@@ -45,9 +45,7 @@ function moveCarousel4(direction) {
 }
 
 function autoMoveCarousel4() {
-  if (window.innerWidth < 768) {
-    moveCarousel4(1);
-  }
+  moveCarousel4(1);
 }
 
 function createDots4() {

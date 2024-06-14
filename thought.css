@@ -123,7 +123,7 @@
 }
 
 .leadershipn-bottom-single {
- width: 24.5em;
+ width: 98vw;
  height: auto;
  background-color: rgba(245, 245, 245, 1);
  padding: 1.25em;
@@ -204,6 +204,15 @@
  transition: transform 0.5s ease;
  gap: 10px;
 }
+.animation-btn {
+  cursor: pointer;
+  font-size: 1em; /* 16px */
+  font-weight: 500;
+  line-height: 1.2em; /* 19.2px */
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #4A4A4A;
+ }
 
 @media (max-width: 850px) {
  .leadershipn-main {
@@ -252,8 +261,9 @@ padding: 0.875em;
  line-height: 1.3125em;
 }
 .leadershipn-bottom-single {
- width: 98vw;
+ width: 96vw;
  height: auto;
+ box-sizing: border-box;
 }
 .leadershipn-bottom {
  padding: 0;

@@ -1,0 +1,265 @@
+.podcast{
+ height: auto;
+ padding: 3.125em 6.25em;
+ margin-top: 1.875em;
+}
+.podcast-title {
+ color: var(--Accent-Teal, #00677f);
+ font: 1.125em "Helvetica Neue LT W1G", Helvetica;
+ font-style: normal;
+ font-weight: 700;
+ line-height: 1.375em;
+ letter-spacing: 0.1125em;
+ text-transform: uppercase;
+ white-space: nowrap;
+ margin-bottom: 3.125em;
+}
+.main-podcast{
+ display: flex;
+ align-items: center;
+ width: 100%;
+ gap: 2.5em;
+}
+.podcast-left, .podcast-right{
+ width: 50%;
+ height: auto;
+ background-color: rgba(245, 245, 245, 1);
+ display: flex;
+ align-items: center;
+ gap: 1.25em;
+}
+.podcast-play{
+ display: flex;
+ align-items: center;
+ gap: 0.625em;
+ margin-top: -1em;
+}
+.podcast-top{
+ font: 1em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 1.5em;
+ margin-top: 1.25em;
+ text-align: left;
+}
+.play-text{
+ font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 1.375em;
+ text-align: left;
+ color: rgba(231, 19, 22, 1);
+ margin-right: 0.625em;
+}
+.podcast-text{
+ flex: 1;
+}
+.c-para{
+ display: none;
+}
+.round:hover {
+ background-color: red;
+}
+.podcast-btn{
+ display: flex;
+ align-items: center;
+ gap: 0.5em;
+ margin-top: 2.5em;
+ margin-left: 0.9375em;
+}
+.podcast-btn > p {
+ font: 1em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 1.2em;
+ letter-spacing: 0.04em;
+ text-align: left;
+ color: #4A4A4A;
+}
+.podcast-btn > img {
+ width: 1em;
+}
+.def1{
+ width: 30%;
+}
+.def1 > img {
+ width: 100%;
+}
+.animation-btn {
+ cursor: pointer;
+ font-size: 1em;
+ font-weight: 500;
+ line-height: 1.2em;
+ letter-spacing: 0.04em;
+ text-align: left;
+ color: #4A4A4A;
+}
+.round {
+ width: 1.875em;
+ height: 1.875em;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: #222222;
+ cursor: pointer;
+}
+.round > img {
+ width: 0.5em;
+}
+
+@media (max-width: 850px){
+ .podcast{
+  height: 18.0625em;
+  padding: 0;
+  margin-top: 3.125em;
+}
+.podcast-title {
+  color: var(--Accent-Teal, #00677f);
+  font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375em;
+  letter-spacing: 0.1125em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 1.5625em;
+  margin-left: 0.625em;
+}
+.main-podcast{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 2.5em;
+}
+.podcast-left, .podcast-right{
+  width: 100vw;
+  height: auto;
+  background-color: rgba(245, 245, 245, 1);
+  display: flex;
+  align-items: start;
+  gap: 1.25em;
+}
+.podcast-play{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 0.625em;
+  margin-top: 1.25em;
+  flex-direction: column;
+}
+.podcast-top{
+  font: 1em "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin-top: 1.25em;
+  text-align: left;
+  display: none;
+}
+.podcast-top2{
+  font: 1em "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin-top: 1.25em;
+  text-align: left;
+}
+.play-text{
+  font: 0.875em "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 600;
+  line-height: 1.375em;
+  text-align: left;
+  color: rgba(231, 19, 22, 1);
+  margin-top: -0.0625em;
+  margin-right: 0.625em;
+}
+.c-para {
+ font: 1.3125em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 400;
+ padding-left: 0.3125em;
+ margin-top: 0.1875em;
+ line-height: 1.875em; 
+ display: block !important;
+ width: 331% !important;
+}
+}
+
+@media (min-width: 900px) {
+ body {
+   font-size: 0.71000em;
+ }
+}
+
+@media (min-width: 1100px) {
+ body {
+   font-size: 0.91000em;
+ }
+}
+
+@media (min-width: 1300px) {
+ body {
+   font-size: 1.0001em;
+ }
+}
+
+@media (min-width: 1500px) {
+ body {
+   font-size: 1.1113em;
+ }
+}
+
+@media (min-width: 1600px) {
+ body {
+   font-size: 1.2501em;
+ }
+}
+
+@media (min-width: 1800px) {
+ body {
+   font-size: 1.3335em;
+ }
+}
+
+@media (min-width: 1900px) {
+ body {
+   font-size: 1.5em;
+ }
+}
+
+@media (min-width: 2200px) {
+ body {
+   font-size: 2em;
+ }
+}
+@media (min-width: 2400px) {
+ body {
+   font-size: 2em;
+ }
+}
+
+@media (min-width: 2800px) {
+ body {
+   font-size: 2em;
+ }
+}
+
+@media (min-width: 3200px) {
+ body {
+   font-size: 2em;
+ }
+}
+
+@media (min-width: 3400px) {
+ body {
+   font-size: 2em;
+ }
+}
+
+@media (min-width: 3800px) {
+ body {
+   font-size: 3em;
+ }
+}
+
+@media (min-width: 4200px) {
+ body {
+   font-size: 4em;
+ }
+}

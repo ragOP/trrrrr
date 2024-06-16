@@ -380,6 +380,14 @@
   box-sizing: border-box;
 }
 
+.main-btn-newsroom > img {
+  width: 1em;
+}
+
+.animation-btn:hover{
+  color: red !important;
+}
+
 @media (max-width: 850px) {
   .footer-first {
     width: 100%;

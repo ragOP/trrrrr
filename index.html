@@ -5,8 +5,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="inNews.css" />
+    <link rel="stylesheet" href="press.css" />
+    <link rel="stylesheet" href="podcast.css" />
+    <link rel="stylesheet" href="thought.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="newsroomAlert.css" />
+    <style>
+      .menubar {
+        display: inline-block;
+        cursor: pointer;
+      }
+      #myLinks {
+        top: 1.25em;
+        left: 0;
+        width: 100%;
+        background: #fff;
+      }
+
+      .bar1,
+      .bar2,
+      .bar3 {
+        width: 2.1875em;
+        height: 0.3125em;
+        background-color: #333;
+        margin: 0.375em 0;
+        transition: 0.4s;
+      }
+
+      .change .bar1 {
+        transform: translate(0, 0.6875em) rotate(-45deg);
+      }
+
+      .change .bar2 {
+        opacity: 0;
+      }
+
+      .change .bar3 {
+        transform: translate(0, -0.6875em) rotate(45deg);
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #fff;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        padding: 0.625em 1.25em;
+        z-index: 12;
+        align-items: center;
+      }
+
+      .topnav #myLinks {
+        display: none;
+      }
+      .topnav ul {
+        padding-left: 0;
+      }
+      .topnav li {
+        color: #000;
+        padding: 0.875em 1em;
+        text-decoration: none;
+        font-size: 1.0625em;
+        display: block;
+      }
+      .topnav li.active {
+        background-color: #fff;
+      }
+      .topnav a.icon {
+        background: #fff;
+        display: block;
+        position: absolute;
+        right: 4.375em;
+        top: 0.625em;
+      }
+
+      .dropdown-container {
+        display: none;
+        color: #000;
+      }
+      .dropdown-left {
+        width: 40%;
+      }
+    </style>
   </head>
   <body>
+    <div class="mobile-container">
+      <div class="topnav">
+        <a href="#home">
+          <div class="navlogo mob">
+            <img id="logo" src="./Images/mob-tf-logo.png" alt="" /></div
+        ></a>
+        <ul id="myLinks">
+          <li class="dropdown-btn" href="#news">About</li>
+          <ul class="dropdown-container">
+            <li href="#">Link 1</li>
+            <li href="#">Link 2</li>
+            <li href="#">Link 3</li>
+          </ul>
+          <li href="#contact">Corporate Social Responsibility</li>
+          <li href="#about">Investors</li>
+          <li>Newsroom</li>
+          <li>Careers</li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction(this)">
+          <div class="menubar">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <script>
+      function myFunction(y) {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+        y.classList.toggle("change");
+      }
+    </script>
+    <div class="desk-nav">
+      <div class="navbar">
+        <a href="/Pages/HomePage/Home.html">
+          <div class="navlogo">
+            <img id="logo" src="./Images/logo.png" alt="" />
+          </div>
+        </a>
+        <div class="menulinks">
+          <div class="menu">
+            <ul>
+              <li id="about-menu-item" class="">
+                <a id="about-link" class="" href="../About.html">ABOUT</a>
+              </li>
+              <li id="csr-menu-item" class="">
+                <a id="csr-link" class="" href="../CSR/Csr.html"
+                  >CORPORATE SOCIAL RESPONSIBILITY</a
+                >
+              </li>
+              <li id="investor-menu-item" class="">
+                <a id="investor-link" class="" href="../CSR/Csr.html"
+                  >INVESTOR</a
+                >
+              </li>
+              <li id="newsroom-menu-item" class="">
+                <a id="newsroom-link" class="" href="javascript:void(0)"
+                  >NEWSROOM</a
+                >
+              </li>
+              <li id="career-menu-item" class="">
+                <a id="career-link" class="" href="/career">CAREER</a>
+              </li>
+            </ul>
+          </div>
+          <div class="search-icon">
+            <img src="./Images/Search.png" alt="" />
+          </div>
+          <button class="button">
+            <a href="https://www.thermofisher.com/" target="_blank"
+              >Thermofisher.com</a
+            >
+
+            <img class="link-img" src="./Images/external-link.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div id="blur-overlay"></div>
+      <div id="dropdown" class="dropdown">
+        <div class="dropdown-left">
+          <div class="dropdown-left-img">
+            <img src="./Images/ss.svg" alt="" style="max-width: 100%" />
+          </div>
+          <div class="dropdown-left-top">
+            <img src="./Images/dropa.svg" alt="" />
+            <p class="dropdown-top-text">Our Mission</p>
+          </div>
+          <p class="dropdown-left-mid">
+            Everything we do starts with our Mission: to <br />
+            enable our customers to make the world <br />
+            <span>healthier, cleaner, and safer.</span>
+          </p>
+          <div class="dropdown-left-bottom">
+            <img src="./Images/dropd.svg" alt="" />
+            <p class="bottom-text">Read More</p>
+          </div>
+        </div>
+        <div style="width: 60%">
+          <div class="dropdown-mid">
+            <div class="main-dropdown">
+              <div class="dropdown-header">
+                <img src="./Images/Icon1.png" alt="" />
+                <p class="heder-drop">Press Releases</p>
+              </div>
+            </div>
+            <div class="main-dropdown">
+              <div class="dropdown-header">
+                <img src="./Images/Icon1.png" alt="" />
+                <p class="heder-drop">In the News</p>
+              </div>
+            </div>
+            <div class="main-dropdown">
+              <div
+                style="margin-bottom: 17px !important"
+                class="dropdown-header"
+              >
+                <img src="./Images/Icon1.png" alt="" />
+                <p class="heder-drop">Podcast : Science with a twist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown-right">
+          <img src="./Images/Vector (4).svg" alt="" />
+        </div>
+      </div>
+    </div>
     <div class="newsroom-about">
       <p class="newsroom-about-title">NEWSROOM</p>
       <div class="newsroom-about-main">
@@ -16,7 +232,7 @@
             Sub-Saharan Africa
           </p>
           <div class="main-btn-newsroom">
-            <img src="../../Assets/Images/redsmall.svg" alt="" />
+            <img src="./Images/redsmall.svg" alt="" />
             <p class="animation-btn">Read more</p>
           </div>
         </div>
@@ -115,6 +331,271 @@
                 <div class="carousel4-dots txt-slider"></div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="podcast">
+      <div class="podcast-title">Latest Podcasts</div>
+      <div class="main-podcast">
+        <div class="podcast-left">
+          <div class="def1">
+            <img src="./Images/podcast-placeholder 1.png" alt="" />
+            <p class="c-para">
+              Delivering on the promise of cell therapies: Programmed immune
+              cells attack cancer and other...
+            </p>
+          </div>
+          <div class="podcast-text">
+            <p class="podcast-top">
+              Delivering on the promise of cell therapies: Programmed immune
+              cells attack cancer and other...
+            </p>
+            <div class="podcast-play">
+              <div class="round">
+                <img src="./Images/play.svg" alt="" />
+              </div>
+              <p class="play-text">
+                Watch Science with a Twist | Season 2 : Episode 10
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="podcast-right">
+          <div class="def1">
+            <img src="./Images/podcast-placeholder 1.png" alt="" />
+            <p class="c-para">
+              Disrupting the Status Quo: The Importance of Diversity in Clinical
+              Trials
+            </p>
+          </div>
+          <div class="podcast-text">
+            <p class="podcast-top">
+              Delivering on the promise of cell therapies: Programmed immune
+              cells attack cancer and other...
+            </p>
+            <div class="podcast-play">
+              <div class="round">
+                <img src="./Images/play.svg" alt="" />
+              </div>
+              <p class="play-text">
+                Watch Science with a Twist | Season 2 : Episode 10
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="podcast-btn">
+        <img src="./Images/redsmall.svg" alt="" />
+        <p class="animation-btn" style="cursor: pointer">View all podcasts</p>
+      </div>
+    </div>
+    <div class="press">
+      <p class="inNews-title">PRESS RELEASES</p>
+      <div class="press-main">
+        <div class="press-single">
+          <img src="./Images/press1.png" alt="" />
+          <p class="press-date">January 5th, 2023</p>
+          <p class="press-desc">
+            Thermo Fisher Scientific Prices Offering of USD-Denominated Senior
+            Notes
+          </p>
+        </div>
+        <div class="press-single">
+          <img src="./Images/press3.png" alt="" />
+          <p class="press-date">January 5th, 2023</p>
+          <p class="press-desc">
+            Thermo Fisher Scientific & Flagship Pioneering Expand Ongoing
+            Strategic Partnership to Jointly Create New Platform Companies with
+            First-in-Class Enabling Technologies for Life Sciences
+          </p>
+        </div>
+        <div class="press-single">
+          <img src="./Images/press2.png" alt="" />
+          <p class="press-date">January 5th, 2023</p>
+          <p class="press-desc">
+            Thermo Fisher Scientific Authorizes $4 Billion of Share Repurchases
+          </p>
+        </div>
+      </div>
+      <div class="press-btn">
+        <img src="./Images/redsmall.svg" alt="" />
+        <p class="animation-btn">View all press releases</p>
+      </div>
+    </div>
+    <div class="inNews">
+      <p class="inNews-title">IN THE NEWS</p>
+      <div class="inNews-main">
+        <div class="inNews-single">
+          <p class="inNews-badge">The Washington Post</p>
+          <img src="./Images/Rectangle 19960 (3).png" alt="" />
+          <p class="inNews-date">January 5th, 2021</p>
+          <p class="inNews-desc">
+            Shanya Gill, 12, invented early detection device for fire
+          </p>
+          <div class="btn-single">
+            <img src="./Images/redsmall.svg" alt="" />
+            <p class="animation-btn">Read more</p>
+          </div>
+        </div>
+        <div class="inNews-single">
+          <p class="inNews-badge">Business Insider</p>
+          <img src="./Images/Rectangle 19960 (1).png" alt="" />
+          <p class="inNews-date">January 5th, 2021</p>
+          <p class="inNews-desc">
+            A middle-schooler just won $25,000 for inventing a fire-detection
+            device that works faster than the average smoke detector
+          </p>
+          <div class="btn-single">
+            <img src="./Images/redsmall.svg" alt="" />
+            <p class="animation-btn">Read more</p>
+          </div>
+        </div>
+        <div class="inNews-single">
+          <p class="inNews-badge">Time</p>
+          <img src="./Images/Rectangle 19960 (2).png" alt="" />
+          <p class="inNews-date">January 5th, 2021</p>
+          <p class="inNews-desc">
+            A More Accurate Diagnosis Thermo Fisher Scientific Preeclampsia
+            Blood Tests
+          </p>
+          <div class="btn-single">
+            <img src="./Images/redsmall.svg" alt="" />
+            <p class="animation-btn">Read more</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="leadershipn-main">
+      <div class="leadershipn-top">
+        <div class="leadershipn-title">THOUGHT LEADERSHIP</div>
+        <div class="leadershipn-cover">
+          <img src="./Images/cover 1.png" alt="" />
+          <div class="leadershipn-right">
+            <p class="leadershipn-top-right">
+              Today’s optimism is tomorrow’s innovation
+            </p>
+            <p class="leadershipn-mid-right">
+              Scientists’ role is to move us toward a better future. But what
+              does that future look like? What does the next generation lab look
+              like, who is standing in it and what problems will they be
+              solving?
+            </p>
+            <p class="leadershipn-mid2-right">
+              Thermo Fisher Scientific partnered with Savanta, a leading market
+              research company, to understand what professionals in Life
+              Sciences expect the world to look like in 2030. We conducted 20
+              hour-long in-depth interviews and surveyed more than 600 Life
+              Science professionals from the United States and Europe.
+            </p>
+            <div class="leadershipn-btn">
+              <img src="./Images/redsmall.svg" alt="" />
+              <p class="animation-btn def change1">Read whitepaper</p>
+            </div>
+          </div>
+        </div>
+        <div class="leadership-cover-bottom">
+          <p>
+            “It is an exciting time to be a scientist. And it’s getting better.
+            I feel like I’m just exploring my hobby or a passion, and I get paid
+            for it.”
+          </p>
+          <p class="author"><span>Masi,</span> Director, Biotechnology</p>
+        </div>
+      </div>
+      <div class="leadershipn-bottom">
+        <p class="leadership-bottom-top">
+          Faced with these challenges,
+          <span>
+            scientists are not afraid to tackle them, and are confident they are
+            going to succeed:
+          </span>
+        </p>
+        <div class="carousel2">
+          <div class="carousel2-inner">
+            <div class="leadershipn-bottom-single">
+              <p class="percentage">91%</p>
+              <p class="percentage-desc">
+                of scientist agree that Life Sciences companies should
+                prioritize people and humanity over the products and services
+                they provide.
+              </p>
+            </div>
+            <div class="leadershipn-bottom-single">
+              <p class="percentage">76%</p>
+              <p class="percentage-desc">
+                of scientists believe they will live to see a complete cure to
+                most types of cancers during their lifetime.
+              </p>
+            </div>
+            <div class="leadershipn-bottom-single">
+              <p class="percentage">92%</p>
+              <p class="percentage-desc">
+                of scientists say implementation of environmentally responsible
+                R&D can be achieved by 2050.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p class="leadership-bottom-top">
+          By 2030, <span>scientist believe the following:</span>
+        </p>
+        <div class="carousel3">
+          <div class="carousel3-inner">
+            <div class="leadership-bottom-single">
+              <p class="percentage">88%</p>
+              <p class="percentage-desc">
+                believe that artificial intelligence computing will have
+                completely transformed the operation of labs.
+              </p>
+            </div>
+            <div class="leadership-bottom-single">
+              <p class="percentage">74%</p>
+              <p class="percentage-desc">
+                say that fewer human workers will be needed in labs because of
+                productivity gains tied to robotics.
+              </p>
+            </div>
+            <div class="leadership-bottom-single">
+              <p class="percentage">74%</p>
+              <p class="percentage-desc">
+                agree that by 2030, virtual labs will rival traditional ones in
+                terms of numbers and output.
+              </p>
+            </div>
+            <div class="leadership-bottom-single">
+              <p class="percentage">64%</p>
+              <p class="percentage-desc">
+                say the labs of 2030 will be unrecognizable compared to right
+                before the pandemic.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="leadership-btn">
+        <img src="./Images/redsmall.svg" alt="" />
+        <p class="animation-btn change">Learn more about thought leadership</p>
+      </div>
+    </div>
+    <div class="center">
+      <div class="newsletter">
+        <div class="newsletter-text">
+          <p class="newsletter-text-top">Newsroom Alerts</p>
+          <p class="newsletter-tect-mid">
+            Get updates on the latest investor events, reports, news and more
+            from our IR team.
+          </p>
+          <p class="email">Email ID</p>
+          <form>
+            <input type="email" id="email" name="email" required />
+          </form>
+        </div>
+        <div class="newsletter-img">
+          <div class="dd">
+            <img src="./Images/Vector.svg" alt="" />
+            <p>SUBSCRIBE</p>
           </div>
         </div>
       </div>
@@ -225,5 +706,21 @@
       <p class="pre-footer-third">Privacy Information Center</p>
     </div>
     <script src="index.js"></script>
+    <script>
+      var dropdown1 = document.getElementsByClassName("dropdown-btn");
+      console.log(dropdown);
+      var i;
+      for (i = 0; i < dropdown1.length; i++) {
+        dropdown1[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdown1Content = this.nextElementSibling;
+          if (dropdown1Content.style.display === "block") {
+            dropdown1Content.style.display = "none";
+          } else {
+            dropdown1Content.style.display = "block";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

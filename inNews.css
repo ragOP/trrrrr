@@ -1,0 +1,162 @@
+.press {
+ height: auto;
+ margin-top: 0.625em;
+ padding: 0 6.25em;
+ margin-bottom: 3.75em;
+}
+
+.press-title {
+ color: var(--Accent-Teal, #00677f);
+ font: 1.125em "Helvetica Neue LT W1G", Helvetica;
+ font-style: normal;
+ font-weight: 700;
+ line-height: 1.375em;
+ letter-spacing: 0.1125em;
+ text-transform: uppercase;
+ white-space: nowrap;
+ margin-bottom: 2.5em;
+}
+
+.inNews-title {
+ color: var(--Accent-Teal, #00677f);
+ font: 1.125em "Helvetica Neue LT W1G", Helvetica; /* 18px */
+ font-weight: 700;
+ line-height: 1.375em; /* 22px */
+ letter-spacing: 0.1em; /* already in em units */
+ text-align: left;
+ margin-bottom: 2.5em; /* 40px */
+}
+
+.press-main {
+ display: flex;
+ align-items: center;
+ gap: 1em;
+}
+
+.press-single {
+ width: 33%;
+ height: 23em;
+}
+
+.press-single > img {
+ width: 100%;
+}
+
+.press-desc {
+ font: 1.25em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 1.75em;
+ text-align: left;
+ margin-top: 0.625em;
+}
+
+.press-date {
+ font: 1.25em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 400;
+ line-height: 1.875em;
+ text-align: left;
+ margin-top: 0.625em;
+ color: gray;
+}
+
+.press-btn {
+ display: flex;
+ align-items: center;
+ gap: 0.5em;
+ margin-top: 5.625em;
+}
+
+.press-btn > p {
+ font: 1em "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 1.2em;
+ letter-spacing: 0.04em;
+ text-align: left;
+}
+
+.press-btn > img {
+ width: 1em;
+}
+
+@media (min-width: 900px) {
+ body {
+   font-size: 0.71000em;
+ }
+}
+
+@media (min-width: 1100px) {
+ body {
+   font-size: 0.91000em;
+ }
+}
+
+@media (min-width: 1300px) {
+ body {
+   font-size: 1.0001em;
+ }
+}
+
+@media (min-width: 1500px) {
+ body {
+   font-size: 1.1113em;
+ }
+}
+
+@media (min-width: 1600px) {
+ body {
+   font-size: 1.2501em;
+ }
+}
+
+@media (min-width: 1800px) {
+ body {
+   font-size: 1.3335em;
+ }
+}
+
+@media (min-width: 1900px) {
+ body {
+   font-size: 1.5em;
+ }
+}
+
+@media (min-width: 2200px) {
+ body {
+   font-size: 2em;
+ }
+}
+@media (min-width: 2400px) {
+ body {
+   font-size: 2em;
+ }
+}
+
+@media (min-width: 2800px) {
+ body {
+   font-size: 2em;
+ }
+}
+
+@media (min-width: 3200px) {
+ body {
+   font-size: 2em;
+ }
+}
+
+@media (min-width: 3400px) {
+ body {
+   font-size: 2em;
+ }
+}
+
+@media (min-width: 3800px) {
+ body {
+   font-size: 3em;
+ }
+}
+
+@media (min-width: 4200px) {
+ body {
+   font-size: 4em;
+ }
+}

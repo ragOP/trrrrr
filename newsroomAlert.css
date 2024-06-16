@@ -1,6 +1,3 @@
-*{
- overflow-x: hidden;
-}
 .newsletter{
  width: 100%;
  height: auto;
@@ -60,7 +57,7 @@ input::placeholder{
 
 .dd > p {
  position: relative;
- top: -4.625em;
+ top: -3.625em;
  left: 4.9375em;
  font: 1em "Helvetica Neue LT W1G", Helvetica;
  font-weight: 500;

@@ -67,6 +67,54 @@
 .btn-single > img {
  width: 1em;
 }
+.carousel {
+  display: none;
+}
+.c-btn{
+  text-transform: uppercase;
+ color: red;
+ font: 20px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 600;
+ margin-top: 1em;
+}
+@media (max-width: 850px){
+  .carousel {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 1.6875em 0.625em;
+    overflow: hidden;
+  }
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .carousel-item {
+    width: 95%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+  .inNews{
+    display: none;
+  }
+  .inNews-single {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 95vw;
+  }
+  .inNews-badge {
+    width: auto;
+    font: 1em "Helvetica Neue LT W1G", Helvetica; /* 16px = 1em */
+  }
+  .inNews-single > img {
+    margin-top: 0.625em;
+    width: 93%;
+  }
+  .inNews-desc {
+    padding-right: 1.125em;
+  }
+}
 @media (min-width: 900px) {
  body {
    font-size: 0.71000em;

@@ -40,5 +40,104 @@
         <p class="animation-btn">View all press releases</p>
       </div>
     </div>
+    <div class="carousel1">
+      <p class="inNews-title">PRESS RELEASES</p>
+      <div class="carousel1-inner">
+        <div class="carousel1-item">
+          <div class="press-single">
+            <img src="./Images/press1.png" alt="" />
+            <p class="press-date">January 5th, 2023</p>
+            <p class="press-desc">
+              Thermo Fisher Scientific Prices Offering of USD-Denominated Senior
+              Notes
+            </p>
+          </div>
+        </div>
+        <div class="carousel1-item">
+          <div class="press-single">
+            <img src="./Images/press3.png" alt="" />
+            <p class="press-date">January 5th, 2023</p>
+            <p class="press-desc">
+              Thermo Fisher Scientific & Flagship Pioneering Expand Ongoing
+              Strategic Partnership to Jointly Create New Platform Companies
+              with First-in-Class Enabling Technologies for Life Sciences
+            </p>
+          </div>
+        </div>
+        <div class="carousel1-item">
+          <div class="press-single">
+            <img src="./Images/press2.png" alt="" />
+            <p class="press-date">January 5th, 2023</p>
+            <p class="press-desc">
+              Thermo Fisher Scientific Authorizes $4 Billion of Share
+              Repurchases
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel1-dots"></div>
+    </div>
+    <script>
+      let currentIndexPress1 = 0;
+
+      function moveCarousel1(direction) {
+        const carouselInner1 = document.querySelector(".carousel1-inner");
+        const items1 = document.querySelectorAll(".carousel1-item");
+        const totalItems1 = items1.length;
+
+        currentIndexPress1 += direction;
+        if (currentIndexPress1 < 0) {
+          currentIndexPress1 = totalItems1 - 1;
+        } else if (currentIndexPress1 >= totalItems1) {
+          currentIndexPress1 = 0;
+        }
+        const offset1 = -currentIndexPress1 * 93;
+        carouselInner1.style.transform = `translateX(${offset1}%)`;
+
+        updateDots1();
+      }
+
+      function autoMoveCarouselPress1() {
+        if (window.innerWidth < 961) {
+          moveCarousel1(1);
+        }
+      }
+
+      function createDots1() {
+        const carouselDots = document.querySelector(".carousel1-dots");
+        const items1 = document.querySelectorAll(".carousel1-item");
+        items1.forEach((_, index) => {
+          const dot = document.createElement("div");
+          dot.classList.add("carousel1-dot");
+          dot.addEventListener("click", () => moveToSlide1(index));
+          carouselDots.appendChild(dot);
+        });
+      }
+
+      function updateDots1() {
+        const dots = document.querySelectorAll(".carousel1-dot");
+        dots.forEach((dot, index) => {
+          if (index === currentIndexPress1) {
+            dot.classList.add("active");
+          } else {
+            dot.classList.remove("active");
+          }
+        });
+      }
+
+      function moveToSlide1(index) {
+        currentIndexPress1 = index;
+        const offset1 = -currentIndexPress1 * 93;
+        const carouselInner1 = document.querySelector(".carousel1-inner");
+        carouselInner1.style.transform = `translateX(${offset1}%)`;
+        updateDots1();
+      }
+
+      window.addEventListener("load", () => {
+        createDots1();
+        updateDots1();
+        setInterval(autoMoveCarouselPress1, 7000);
+      });
+    </script>
   </body>
 </html>

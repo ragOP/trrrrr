@@ -7,6 +7,48 @@
     <link rel="stylesheet" href="press.css" />
   </head>
   <body>
+    <div class="carousel">
+      <p class="inNews-title">IN THE NEWS</p>
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <div class="inNews-single">
+            <p class="inNews-badge">The Washington Post</p>
+            <img src="./Images/Rectangle 19960 (3).png" alt="" />
+            <p class="inNews-date">January 5th, 2021</p>
+            <p class="inNews-desc">
+              Shanya Gill, 12, invented early detection device for fire
+            </p>
+            <p class="c-btn animation-btn">READ MORE</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="inNews-single">
+            <p class="inNews-badge">Business Insider</p>
+            <img src="./Images/Rectangle 19960 (1).png" alt="" />
+            <p class="inNews-date">January 5th, 2021</p>
+            <p class="inNews-desc">
+              A middle-schooler just won $25,000 for inventing a fire-detection
+              device that works faster than the average smoke detector
+            </p>
+            <p class="c-btn nimation-btn">READ MORE</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="inNews-single">
+            <p class="inNews-badge">Time</p>
+            <img src="./Images/Rectangle 19960 (2).png" alt="" />
+            <p class="inNews-date">January 5th, 2021</p>
+            <p class="inNews-desc">
+              A More Accurate Diagnosis Thermo Fisher Scientific Preeclampsia
+              Blood Tests
+            </p>
+            <p class="c-btn nimation-btn">READ MORE</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-dots"></div>
+      <p class="c-btn" style="margin-left: 5px">View All News</p>
+    </div>
     <div class="inNews">
       <p class="inNews-title">IN THE NEWS</p>
       <div class="inNews-main">
@@ -50,5 +92,69 @@
         </div>
       </div>
     </div>
+    <script>
+      let currentIndex = 0;
+
+      function moveCarousel(direction) {
+        const carouselInner = document.querySelector(".carousel-inner");
+        const items = document.querySelectorAll(".carousel-item");
+        const totalItems = items.length;
+
+        currentIndex += direction;
+
+        if (currentIndex < 0) {
+          currentIndex = totalItems - 1;
+        } else if (currentIndex >= totalItems) {
+          currentIndex = 0;
+        }
+
+        const offset = -currentIndex * 93;
+        carouselInner.style.transform = `translateX(${offset}%)`;
+
+        updateDots();
+      }
+
+      function autoMoveCarousel() {
+        if (window.innerWidth < 961) {
+          moveCarousel(1);
+        }
+      }
+
+      function createDots() {
+        const carouselDots = document.querySelector(".carousel-dots");
+        const items = document.querySelectorAll(".carousel-item");
+        items.forEach((_, index) => {
+          const dot = document.createElement("div");
+          dot.classList.add("carousel-dot");
+          dot.addEventListener("click", () => moveToSlide(index));
+          carouselDots.appendChild(dot);
+        });
+      }
+
+      function updateDots() {
+        const dots = document.querySelectorAll(".carousel-dot");
+        dots.forEach((dot, index) => {
+          if (index === currentIndex) {
+            dot.classList.add("active");
+          } else {
+            dot.classList.remove("active");
+          }
+        });
+      }
+
+      function moveToSlide(index) {
+        currentIndex = index;
+        const offset = -currentIndex * 93;
+        const carouselInner = document.querySelector(".carousel-inner");
+        carouselInner.style.transform = `translateX(${offset}%)`;
+        updateDots();
+      }
+
+      window.addEventListener("load", () => {
+        createDots();
+        updateDots();
+        setInterval(autoMoveCarousel, 7000);
+      });
+    </script>
   </body>
 </html>

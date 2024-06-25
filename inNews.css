@@ -3,6 +3,7 @@
  margin-top: 0.625em;
  padding: 0 6.25em;
  margin-bottom: 3.75em;
+ display: block;
 }
 
 .press-title {
@@ -76,6 +77,68 @@
 
 .press-btn > img {
  width: 1em;
+}
+
+.carousel1{
+ display: none;
+}
+
+.carousel1-dots {
+ display: flex;
+ justify-content: end;
+ margin-top: 9.875em;
+ margin-right: 1.875em;
+}
+.carousel1-dot {
+ width: 0.625em;
+ height: 0.625em;
+ background-color: rgb(192, 192, 192);
+ margin: 0 0.4375em;
+ transition: all 0.3s ease;
+}
+
+.carousel1-dot.active {
+ background-color: red;
+ transform: scaleX(2);
+}
+
+
+@media (max-width: 850px) {
+ .press{
+  display: none;
+ }
+ .press-single{
+  width: 97%;
+ }
+ .carousel1 {
+  display: block !important;
+  position: relative;
+  width: 100%;
+  margin: 5.25em 0.625em;
+  overflow: hidden;
+}
+
+.carousel1-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel1-item {
+  width: 95%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  width: 95%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
 }
 
 @media (min-width: 900px) {

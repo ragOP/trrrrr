@@ -107,11 +107,14 @@ input::placeholder{
   flex-direction: column;
   background-color: rgb(255, 255, 255);
   margin: 0;
-  margin-top: 0.3125em;
+  margin-top: 3.3125em;
 }
 
 .newsletter-text {
   margin: 0 0.625em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .newsletter-text-top {

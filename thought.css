@@ -266,7 +266,14 @@ padding: 0.875em;
  box-sizing: border-box;
 }
 .leadershipn-bottom {
- padding: 0;
+ padding: 0.5em;
+}
+.leadership-btn{
+  margin-left: 0.5em;
+  margin-top: 2em;
+}
+.percentage-desc {
+  width: 70vw;
 }
 }
 
